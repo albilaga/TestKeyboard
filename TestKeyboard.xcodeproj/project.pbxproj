@@ -13,7 +13,38 @@
 		50AC64642508020D0069B33F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AC64632508020D0069B33F /* Assets.xcassets */; };
 		50AC64672508020D0069B33F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50AC64662508020D0069B33F /* Preview Assets.xcassets */; };
 		50AC646A2508020D0069B33F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50AC64682508020D0069B33F /* LaunchScreen.storyboard */; };
+		50AC6478250802290069B33F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AC6477250802290069B33F /* KeyboardViewController.swift */; };
+		50AC647C250802290069B33F /* TestKeuboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50AC6475250802290069B33F /* TestKeuboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50AE111425094E470046E2BA /* KeyboardHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE111325094E470046E2BA /* KeyboardHostingController.swift */; };
+		50AE111625094EF30046E2BA /* UIInputViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE111525094EF30046E2BA /* UIInputViewController+Extensions.swift */; };
+		50AE111825094F770046E2BA /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE111725094F770046E2BA /* KeyboardView.swift */; };
+		50AE111A25095F9E0046E2BA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE111925095F9E0046E2BA /* UIView+Extensions.swift */; };
+		50AE111C2509620A0046E2BA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE111B2509620A0046E2BA /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50AC647A250802290069B33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50AC64522508020B0069B33F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50AC6474250802290069B33F;
+			remoteInfo = TestKeuboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50AC6480250802290069B33F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50AC647C250802290069B33F /* TestKeuboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		50AC645A2508020C0069B33F /* TestKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +55,25 @@
 		50AC64662508020D0069B33F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50AC64692508020D0069B33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50AC646B2508020D0069B33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AC6475250802290069B33F /* TestKeuboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestKeuboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AC6477250802290069B33F /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		50AC6479250802290069B33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AE111325094E470046E2BA /* KeyboardHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHostingController.swift; sourceTree = "<group>"; };
+		50AE111525094EF30046E2BA /* UIInputViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIInputViewController+Extensions.swift"; sourceTree = "<group>"; };
+		50AE111725094F770046E2BA /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		50AE111925095F9E0046E2BA /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		50AE111B2509620A0046E2BA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		50AC64572508020B0069B33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AC6472250802290069B33F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				50AC645C2508020C0069B33F /* TestKeyboard */,
+				50AC6476250802290069B33F /* TestKeuboard */,
 				50AC645B2508020C0069B33F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				50AC645A2508020C0069B33F /* TestKeyboard.app */,
+				50AC6475250802290069B33F /* TestKeuboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +123,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		50AC6476250802290069B33F /* TestKeuboard */ = {
+			isa = PBXGroup;
+			children = (
+				50AC6477250802290069B33F /* KeyboardViewController.swift */,
+				50AC6479250802290069B33F /* Info.plist */,
+				50AE111325094E470046E2BA /* KeyboardHostingController.swift */,
+				50AE111525094EF30046E2BA /* UIInputViewController+Extensions.swift */,
+				50AE111725094F770046E2BA /* KeyboardView.swift */,
+				50AE111925095F9E0046E2BA /* UIView+Extensions.swift */,
+				50AE111B2509620A0046E2BA /* CustomTextField.swift */,
+			);
+			path = TestKeuboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,15 +147,34 @@
 				50AC64562508020B0069B33F /* Sources */,
 				50AC64572508020B0069B33F /* Frameworks */,
 				50AC64582508020B0069B33F /* Resources */,
+				50AC6480250802290069B33F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				50AC647B250802290069B33F /* PBXTargetDependency */,
 			);
 			name = TestKeyboard;
 			productName = TestKeyboard;
 			productReference = 50AC645A2508020C0069B33F /* TestKeyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		50AC6474250802290069B33F /* TestKeuboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50AC647D250802290069B33F /* Build configuration list for PBXNativeTarget "TestKeuboard" */;
+			buildPhases = (
+				50AC6471250802290069B33F /* Sources */,
+				50AC6472250802290069B33F /* Frameworks */,
+				50AC6473250802290069B33F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestKeuboard;
+			productName = TestKeuboard;
+			productReference = 50AC6475250802290069B33F /* TestKeuboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +187,9 @@
 				ORGANIZATIONNAME = "Albilaga Linggra Pradana";
 				TargetAttributes = {
 					50AC64592508020B0069B33F = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					50AC6474250802290069B33F = {
 						CreatedOnToolsVersion = 11.7;
 					};
 				};
@@ -124,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				50AC64592508020B0069B33F /* TestKeyboard */,
+				50AC6474250802290069B33F /* TestKeuboard */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +221,13 @@
 				50AC646A2508020D0069B33F /* LaunchScreen.storyboard in Resources */,
 				50AC64672508020D0069B33F /* Preview Assets.xcassets in Resources */,
 				50AC64642508020D0069B33F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50AC6473250802290069B33F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +244,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50AC6471250802290069B33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AC6478250802290069B33F /* KeyboardViewController.swift in Sources */,
+				50AE111825094F770046E2BA /* KeyboardView.swift in Sources */,
+				50AE111C2509620A0046E2BA /* CustomTextField.swift in Sources */,
+				50AE111A25095F9E0046E2BA /* UIView+Extensions.swift in Sources */,
+				50AE111425094E470046E2BA /* KeyboardHostingController.swift in Sources */,
+				50AE111625094EF30046E2BA /* UIInputViewController+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50AC647B250802290069B33F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50AC6474250802290069B33F /* TestKeuboard */;
+			targetProxy = 50AC647A250802290069B33F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50AC64682508020D0069B33F /* LaunchScreen.storyboard */ = {
@@ -283,6 +396,7 @@
 		50AC646F2508020D0069B33F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestKeyboard/Preview Content\"";
@@ -302,6 +416,7 @@
 		50AC64702508020D0069B33F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestKeyboard/Preview Content\"";
@@ -313,6 +428,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pradana.TestKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50AC647E250802290069B33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestKeuboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradana.TestKeyboard.TestKeuboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50AC647F250802290069B33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestKeuboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradana.TestKeyboard.TestKeuboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,6 +486,15 @@
 			buildConfigurations = (
 				50AC646F2508020D0069B33F /* Debug */,
 				50AC64702508020D0069B33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50AC647D250802290069B33F /* Build configuration list for PBXNativeTarget "TestKeuboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50AC647E250802290069B33F /* Debug */,
+				50AC647F250802290069B33F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
