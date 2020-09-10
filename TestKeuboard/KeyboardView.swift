@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct KeyboardView: View {
-    let controller : UIInputViewController
-    @State var text=""
+    let controller : KeyboardViewController
+    @State var text = ""
+    @State var text2 = ""
     @State var isTextActive: Bool? = false
+    @State var isText2Active: Bool? = false
     
     @State var isExtendedMode = false
     
@@ -22,6 +24,8 @@ struct KeyboardView: View {
     func keyboardAction(_ text:String) -> Void {
         if isTextActive == true {
             self.text += text
+        } else if isText2Active == true {
+            self.text2 += text
         } else {
             controller.textDocumentProxy.insertText(text)
         }
@@ -35,7 +39,9 @@ private extension KeyboardView {
         VStack{
             standardButton()
             
-            CustomTextField(text: $text, nextResponder: .constant(nil), isResponder: $isTextActive, isSecured: false, keyboard: .default).frame(width: 360, height: 40.0).background(/*@START_MENU_TOKEN@*/Color.orange/*@END_MENU_TOKEN@*/)
+            CustomTextField(text: $text, nextResponder: $isText2Active, isResponder: $isTextActive, isSecured: false, keyboard: .default).frame(width: 360, height: 40.0).background(Color.white)
+            
+            CustomTextField(text: $text2, nextResponder: .constant(nil), isResponder: $isText2Active, isSecured: false, keyboard: .default).frame(width: 360, height: 40.0).background(Color.white)
             
             Button(action: {
                 self.changeMode()
@@ -48,7 +54,9 @@ private extension KeyboardView {
         VStack{
             standardButton()
             
-            CustomTextField(text: $text, nextResponder: .constant(nil), isResponder: $isTextActive, isSecured: false, keyboard: .default).frame(width: 360, height: 40.0).background(/*@START_MENU_TOKEN@*/Color.orange/*@END_MENU_TOKEN@*/)
+            CustomTextField(text: $text, nextResponder: $isText2Active, isResponder: $isTextActive, isSecured: false, keyboard: .default).frame(width: 360, height: 40.0).background(Color.white)
+            
+            CustomTextField(text: $text2, nextResponder: .constant(nil), isResponder: $isText2Active, isSecured: false, keyboard: .default).frame(width: 360, height: 40.0).background(Color.white)
             
             Button(action: {
                 self.changeMode()
@@ -92,6 +100,7 @@ private extension KeyboardView {
     
     func changeMode() {
         self.isExtendedMode = !self.isExtendedMode
+        controller.resetViewSize()
     }
     
     var keyboardView: AnyView{
